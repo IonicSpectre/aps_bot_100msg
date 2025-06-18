@@ -1,0 +1,11 @@
+services:
+  - type: worker
+    name: telegram-command-bot
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: bash start.sh
+    envVars:
+      - key: BOT_TOKEN
+        value: "7515123882:AAFtuZVZqDc_W9xxGWgJkmj1P9kxjN4u-Oc"
+      - key: MESSAGGIO
+        value: "Caccapupu"
